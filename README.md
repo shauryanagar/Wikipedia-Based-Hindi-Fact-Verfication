@@ -79,7 +79,7 @@ Place the trained `model_weights.pt` file into the root of the project directory
 
 ### 3. Python API
 
-Run inference directly from the command line:
+Run inference directly from python:
 
 ```python
 from pipeline import verify_claim
