@@ -77,7 +77,7 @@ curl -L -o model_weights.pt "https://github.com/shauryanagar/hindi-fact-verifica
 
 Place the trained `model_weights.pt` file into the root of the project directory. The verification pipeline will automatically load this checkpoint into `mDeBERTa-v3` for inference.
 
-### 3. Headless CLI Verification
+### 3. Python API
 
 Run inference directly from the command line:
 
