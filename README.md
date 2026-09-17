@@ -57,14 +57,20 @@ $$\mathcal{L}_{\text{MSE}} = \frac{1}{D} \sum_{i=1}^{D} (e_{\text{sent}, i} - e_
 ### 1. Repository Setup
 
 ```bash
-git clone https://github.com/shauryanagar/hindi-fact-verifier.git
-cd hindi-fact-verifier
+# 1. Clone the repository
+git clone https://github.com/shauryanagar/hindi-fact-verification.git
+cd hindi-fact-verification
 
+# 2. Create and activate a virtual environment
 python3 -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
+# 3. Install  dependencies
 pip install --upgrade pip
 pip install -r requirements.txt
+
+# 4. Download fine-tuned model weights (v1.0.0 release)
+curl -L -o model_weights.pt "https://github.com/shauryanagar/hindi-fact-verification/releases/download/v1.0.0/model_weights.pt"
 ```
 
 ### 2. Model Weights Setup
